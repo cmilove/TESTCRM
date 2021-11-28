@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    日志信息，方便检查数据库知行语句返回内容-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--    设置别名-->
+    <typeAliases>
+        <package name="com.fang.domain"/>
+    </typeAliases>
+    <mappers>
+        <!--设置xml文件位置-->
+        <!--        <mapper resource="com/fjc/dao/mapper.xml"/>-->
+        <package name="com.fang.dao"/>
+    </mappers>
+</configuration>
